@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+<body>
+    <center>
+        <section>
+            <div id="clock"></div>
+            <div id="nextdiv">
+                <div id="inputdiv">
+                    <!-- dont forget to do this if it will read 24hrs or 12hrs -->
+                    <!-- <input type="time" id="hours"> -->
+                    <input type="text" placeholder="Hour" id="hours">
+                    <input type="text" placeholder="Minute" id="minutes">
+                </div>
+                <button onclick="setAlarm()">⏰</button>
+                <button onclick="question()">OFF>>>></button>
+                <div id="wake"></div>
+            </div>
+        </section>
+    </center>
+
+
+    <script src="alarm.js"></script>
+
+    
+
+    
+</body>
+</html>

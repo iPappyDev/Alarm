@@ -1,0 +1,80 @@
+body{
+    background-image: url(alarmclock.webp);
+}
+#clock {
+    padding-top: 70px;
+    font-size: 100px;
+    padding-top: 150px;
+    height: 100px; 
+
+}
+#nextdiv{
+    padding-top: 100px;
+}
+#inputdiv{
+    height: 70px;
+    /* width: 40%; */
+    /* margin: auto; */
+}
+input{
+    height: 50px;
+    font-size: 28px;
+}
+button{
+    height: 50px;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#wake {
+    color: white;
+}
+@media all and (max-width : 425px) {
+    #clock {
+        font-size: 80px;
+    }
+    input{
+        width: 150px;
+        height: 30px;
+        font-size: 25px;
+    }
+}
+@media all and (max-width : 414px) {
+    #clock {
+        font-size: 80px;
+    }
+    input{
+        width: 175px;
+        height: 50px;
+        font-size: 25px;
+    }
+    button{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+@media all and (max-width : 375px) {
+    #clock {
+        font-size: 60px;
+    }
+    input{
+        width: 150px;
+        height: 30px;
+        font-size: 25px;
+    }
+}
+@media all and (max-width : 320px) {
+    #clock {
+        font-size: 60px;
+    }
+    input{
+        width: 70px;
+        height: 30px;
+        font-size: 25px;
+    }
+    button{
+        padding-top: 20px;
+        width: 150PX;
+    }
+}
