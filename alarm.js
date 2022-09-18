@@ -1,4 +1,4 @@
-var song = new Audio('edited.mp3');
+const song = new Audio('edited.mp3');
 
 const timeDisp = ()=>{
     const time = new Date();
@@ -23,24 +23,24 @@ const setAlarm= ()=>{
     let alarmmin = minutes.value;
     alarmTime = new Date();
 
-    if (alarmHrs == '' && alarmmin == ''){
-        alert("enter time")
-        location.reload()
+    // if (alarmHrs == '' && alarmmin == ''){
+    //     alert("enter time")
+    //     location.reload()
 
-    }
+    // }
     if(alarmHrs == alarmTime.getHours() && alarmmin == alarmTime.getMinutes()){
         song.play()
     }
     setInterval("setAlarm()", 1000);
 }
-const question= ()=>{
+const hey = ()=>{
     alert("solve this question")
-    var wakeUp = prompt('DO YOU HAVE CLASS TODAY? YES/NO')
-    if(wakeUp == "NO"){
+    var wakeUp = prompt('DO YOU HAVE CLASS TODAY?', 'yes/no')
+    if(wakeUp == "no"){
         alert('REST ON BRUV')
         location.reload()
     }
-    else if(wake == "YES"){
+    else if(wake == "yes"){
         alert("Wake up My Niqqa")
     }
 }
